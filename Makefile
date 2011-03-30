@@ -1,5 +1,5 @@
-CC = egcc
-CFLAGS = -O6
+CC = gcc
+CFLAGS = -O3
 
 bitrev2.h: gen.c 
 	$(CC) gen.c -o gen -lm
