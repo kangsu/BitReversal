@@ -1,0 +1,57 @@
+COBRA version 0.01a pre-Alpha release
+
+COBRA is the Cache Optimal Bit-Reverse Algorithm.  This release is an
+implementation of the algorithm.  There are two papers published on
+the actual algorithm and some of it's performance numbers (see bottom
+of this file for references).  
+
+This distribution comes with the following six files:
+
+README - This file.
+
+Makefile - The file used to make the bit-reverse object file and an
+example code.
+
+gen.c - Configures the bit-reversal implementation for the particular
+machine you are running on.
+
+_bitrev.h - The .h file for COBRA.  Will be renamed to "bitrev.h"
+during the execution of the generator.
+
+bitrev.c - Contains the actual COBRA algorithm.  This code performs
+bit-reversals on type 'float'.  
+
+example.c - An example code that shows how to use the COBRA algorithm.
+
+To make the bitrev.o file, in the directory this distribution is
+located type:
+make bitrev.o
+
+You will be prompted with two questions:
+"What is the size of cache (in Kbytes)?"
+"How many bytes are there in a cache line?"
+
+Answer these questions as dictated by your machine.  
+
+To make the example program, in the directory this distribution is
+located type:
+make example
+
+You will be prompted with the same above questions (unless you've
+already made the bitrev.o file).  The executable takes one command
+line parameter 'lgn' which is the log of the bit-reverse this example
+will do.  
+
+Any questions or comments should be directed to: kgatlin@cs.ucsd.edu
+
+
+Addtional References:
+
+Kang Su Gatlin and Larry Carter, 
+"Memory Hierarchy Considerations for Fast Transpose and
+Bit-Reversals", 
+HPCA-5, January 1999. 
+
+Larry Carter and Kang Su Gatlin, 
+"Towards an Optimal Bit-Reverse Permuatation Program",
+Foundations of Computer Science '98 , November 1998. 
