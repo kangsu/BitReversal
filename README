@@ -42,7 +42,7 @@ already made the bitrev.o file).  The executable takes one command
 line parameter 'lgn' which is the log of the bit-reverse this example
 will do.  
 
-Any questions or comments should be directed to: kgatlin@cs.ucsd.edu
+Any questions or comments should be directed to: kangsu@alumni.ucsd.edu
 
 
 Addtional References:
